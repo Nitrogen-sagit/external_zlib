@@ -22,7 +22,6 @@ cc_defaults {
         "src/gzlib.c",
         "src/gzread.c",
         "src/gzwrite.c",
-        "src/infback.c",
         "src/inftrees.c",
         "src/trees.c",
         "src/uncompr.c",
@@ -46,8 +45,10 @@ cc_defaults {
             srcs: [
                 "src/contrib/optimizations/arm/arm_features.c",
                 "src/contrib/optimizations/arm/armv8_crc32.c",
+                "src/contrib/optimizations/arm/infback.c",
                 "src/contrib/optimizations/inffast_chunky.c",
                 "src/contrib/optimizations/inflate.c",
+
             ],
         },
         arm64: {
@@ -59,18 +60,21 @@ cc_defaults {
             srcs: [
                 "src/contrib/optimizations/arm/arm_features.c",
                 "src/contrib/optimizations/arm/armv8_crc32.c",
+                "src/contrib/optimizations/arm/infback.c",
                 "src/contrib/optimizations/inffast_chunky.c",
                 "src/contrib/optimizations/inflate.c",
             ],
         },
         x86: {
             srcs: [
+                "src/infback.c",
                 "src/inffast.c",
                 "src/inflate.c",
             ],
         },
         x86_64: {
             srcs: [
+                "src/infback.c",
                 "src/inffast.c",
                 "src/inflate.c",
             ],
