@@ -18,6 +18,7 @@ cc_library {
         "-DUNALIGNED_OK",
         "-Wall",
         "-Werror",
+	    "-Wno-sign-compare",
     ],
     stl: "none",
     export_include_dirs: [
